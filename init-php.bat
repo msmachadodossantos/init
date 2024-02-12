@@ -5,11 +5,6 @@ IF NOT EXIST .vscode (MKDIR .vscode)
 
 @REM See: https://www.nikolaposa.in.rs/blog/2017/01/16/on-structuring-php-projects/
 
-IF NOT EXIST artifacts MKDIR artifacts
-    IF NOT EXIST artifacts\Domain MKDIR artifacts\Domain
-
-    IF NOT EXIST artifacts\glossary.md (TYPE NUL > artifacts\glossary.md)
-
 IF NOT EXIST bin MKDIR bin
 
 IF NOT EXIST config MKDIR config
@@ -85,6 +80,8 @@ IF NOT EXIST resources MKDIR resources
 
 IF NOT EXIST src MKDIR src
     IF NOT EXIST src\Domain MKDIR src\Domain
+
+IF NOT EXIST swe MKDIR swe
 
 IF NOT EXIST templates MKDIR templates
     IF NOT EXIST templates\errors MKDIR templates\errors
